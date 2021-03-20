@@ -20,7 +20,7 @@ p{
     margin-bottom: 1.5rem;
 }
 
-button{
+.primary-button{
     padding: 1rem;
     border: none;
     background: #4554a5;
@@ -30,6 +30,37 @@ button{
     cursor: pointer;
 }
 
-button:hover{
+.primary-button:hover{
     background: #29346f;
+}
+
+.tooltip-holder{
+    position: relative;
+}
+
+.tooltip-holder:hover .tooltip{
+    display: block;
+}
+
+.tooltip{
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    bottom: 100%;
+    margin-bottom: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 100px;
+    padding: 0.25rem;
+    display: none;
+}
+
+.tooltip::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid;
+    border-color: #000 transparent transparent transparent;
+    top: 100%;
 }
