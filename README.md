@@ -9,11 +9,14 @@ The process is to:
 
 ### Example:
 
-![Sample image](/src/assets/tooltip-image.png)
-
+**Code:**
 ```
 <button class="tooltip-holder">
   More
   <span class="tooltip">Click to read more.</span>
 </button>
 ```
+
+**Output:**
+
+![Sample image](src/assets/tooltip-image.PNG)
